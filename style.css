@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    margin: 1% 0% 1% 1%;
+}
+
+.cont {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* -------- Fim dos contatos ----------*/
+.contato {
+    width: 100%;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.contato section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px 1px 1px 1px;
+}
+
+.contato p {
+    margin: 3px;
+}
+/* -------- Fim dos contatos ---------- */
+/* ------- Inicio do header ------- */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav li {
+    text-align: center;
+    position: relative;
+    list-style-type: none;
+}
+
+.main-nav li:hover .submenu>li {
+    display: block;
+    top: 0px;
+    z-index: 1;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+    background: darkblue;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 120px;
+}
+
+.arrow {
+    margin-left: 8px;
+    color: #777;
+    font-size: 12px;
+}
+
+.menu-principal {
+    margin: 0.4% auto;
+    display: flex;
+}
+
+nav {
+    width: 100%;
+}
+
+.center-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 1%;
+}
+
+li>a {
+    display: block;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: backgorund 0.4s;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.main-nav a:hover {
+    background: darkblue;
+}
+/* ------ Fim do header */
+
+/* Slide */
+
+.slide {
+    background-color: whitesmoke;
+}
+
+.nivoSlider {
+    z-index: 0;
+}
+.nivo-directionNav {
+    color: #c3c3c3;
+}
+
+.nivo-nextNav::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+}
+
+.nivo-prevNav:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid black;
+}
+
+.nivo-controlNav {
+    color: whitesmoke;
+}
+
+.nivo-controlNav a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    background-color: #555555;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 100%;
+}
+
+/* ------- Fim do Slide --------- */
+
+/* ------- Inicio das Informações --------- */
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.informacoes h1 {
+    font-size: 2rem;
+}
+
+.informacoes article>ul {
+    margin: 3% 0% 3% 5%;
+}
+
+.informacoes article p {
+    margin: 2%;
+}
+/* -------- Fim das Informações --------- */
+
+/* -------- Inicio dos cards ---------- */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 24%;
+}
+
+.card picture img {
+    display: block;
+    border: 0;
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.card a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.card a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+    padding: 1.4em;
+}
+
+
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+/* ------- Fim dos cards ------- */
+/* ------- Inicio do rodapé ------ */
+.rodape {
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+    flex-direction: row;
+}
+
+.menu-rodape {
+    display: flex;
+    list-style: none;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.menu-rodape li a {
+    text-decoration: none;
+    padding: 5%;
+    color: #aaa;
+    font-size: 1.5rem;
+}
+/* ------- Fim do rodapé --------- */
+
+
+/* ---------- Medias Queries --------------- */
+@media(max-width:1367px) {
+    .logo {
+        margin-left: 1%;
+    }
+}
+
+@media(max-width:700px) {
+    * {
+        margin-left: 1.2%;
+    }
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .informacoes article>ul {
+        margin: 3% 0% 3% 6%;
+    }
+    .informacoes article p {
+        margin: 3% 0% 2% 3%;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .logo {
+        margin-top: 1%;
+    }
+    .menu-principal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-nav ul {
+        justify-content: center;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+    }
+}
+/* -------- Fim das medias queries -------- */
